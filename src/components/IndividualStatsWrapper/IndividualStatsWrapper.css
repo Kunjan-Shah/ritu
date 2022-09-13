@@ -1,0 +1,37 @@
+.individual-stats-wrapper {
+    width: 350px;
+    min-width: 45%;
+    border-radius: 10px;
+    background-color: #ECF3F8;
+    padding: 1rem;
+    display: flex;
+}
+
+.individual-stats-wrapper .left {
+    width: 60%;
+    font-family: sans-serif;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    padding-left: 1rem;
+}
+
+.individual-stats-wrapper .left .title {
+    font-size: 1.5rem;
+}
+
+.individual-stats-wrapper .left .sub-title {
+    font-size: 1rem;
+    color: #999999;
+}
+
+.individual-stats-wrapper .left .value {
+    font-size: 1.5rem;
+}
+
+.individual-stats-wrapper .right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

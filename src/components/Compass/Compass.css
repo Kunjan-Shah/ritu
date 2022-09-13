@@ -1,0 +1,79 @@
+:root {
+    --needle-rotate-angle: 30deg;
+}
+.compass {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #ECF3F8;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.stroke-line {
+    border-bottom: 2px solid #C4E2FF;
+    width: 100%;
+    position: absolute;
+}
+
+.compass .legend {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    background-color: #ECF3F8;
+    position: absolute;
+    transform: translateY(10px);
+}
+
+.compass .legend .W-E {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.2rem;
+    transform: translateY(3px);
+}
+
+.compass .legend .N-S {
+    display: flex;
+    justify-content: space-between;
+    transform: rotate(90deg) translateX(27px);
+    padding: 0 0.2rem;
+}
+
+.compass .legend .N-S .N, .S {
+    transform: rotate(90deg);
+}
+
+.needle {
+    border-bottom: 2px solid #24609B;
+    width: 100%;
+    position: absolute;
+    transform: translateY(50px) rotate(var(--needle-rotate-angle));
+    animation-name: needleMover;
+    animation-duration: 1s;
+}
+
+.needle .pointer {
+    width: 0;
+	height: 0;
+	border-top: 9px solid transparent;
+	border-right: 12px solid #24609B;
+	border-bottom: 8px solid transparent;
+    position: absolute;
+    transform: translateY(-7px);
+}
+
+@keyframes needleMover {
+    0% {
+        transform: translateY(50px) rotate(0deg);
+    }
+    60% {
+        transform: translateY(50px) rotate(var(--needle-front-angle));
+    }
+    80% {
+        transform: translateY(50px) rotate(var(--needle-back-angle));
+    }
+    100% {
+        transform: translateY(50px) rotate(var(--needle-rotate-angle));
+    }
+}

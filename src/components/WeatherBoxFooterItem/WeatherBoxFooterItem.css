@@ -1,0 +1,10 @@
+.weather-box-footer-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-box-footer-item .item {
+
+}

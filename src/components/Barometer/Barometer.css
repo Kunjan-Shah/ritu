@@ -1,0 +1,29 @@
+.barometer {
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+.barometer-needle {
+    position: absolute;
+    transform: translate(19px, -57px) rotate(66deg);
+}
+
+.barometer-needle .stick {
+    border-bottom: 4px solid red;
+    width: 50px;
+    /* transform: translateX(19px) translateY(-54px) rotate(66deg); */
+    
+}
+
+.barometer-needle .left-arrow {
+    border-bottom: 4px solid red;
+    width: 16px;
+    transform: translate(-3px, -1px) rotate(26deg);
+}
+
+.barometer-needle .right-arrow {
+    border-bottom: 4px solid red;
+    width: 16px;
+    transform: translate(-3px, 1px) rotate(-26deg);
+}

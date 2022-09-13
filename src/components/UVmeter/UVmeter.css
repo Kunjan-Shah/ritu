@@ -1,0 +1,59 @@
+.uv-meter {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #ECF3F8;
+    background-image: linear-gradient(to right, green,yellow,orange,red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.uv-meter .uv-index-title {
+    height: 80px;
+    width: 80px;
+    background-color: #ECF3F8;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.meter-svg {
+    height: 100%;
+}
+
+.meter-svg circle {
+    fill: transparent;
+}
+
+.meter-svg path {
+    fill: #ECF3F8;
+}
+
+.uv-meter .uv-needle {
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    transform: rotate(var(--uv-needle-angle));
+
+    animation: UVNeedleMover 1s;
+}
+
+.uv-meter .uv-needle .ball {
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+}
+
+@keyframes UVNeedleMover {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(var(--uv-needle-angle));
+    }
+}

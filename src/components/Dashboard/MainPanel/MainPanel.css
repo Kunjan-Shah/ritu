@@ -1,0 +1,153 @@
+.dashboard-main-panel {
+    height: 100%;
+    width: calc(59vw - 8px);
+    display: flex;
+    flex-flow: column;
+    padding: 1.5rem 2rem;
+}
+
+.task-bar {
+    height: 8%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-bar .search-bar {
+    width: 80%;
+}
+
+.task-bar .right {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.task-bar .notifications-container span{
+    font-size: 1.5rem;
+}
+
+.task-bar .user-profile-container span{
+    font-size: 2rem;
+}
+
+.weather-panel {
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-box {
+    background-color: #C4E2FF;
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.weather-box .left {
+    width: 50%;
+    height: 100%;
+    font-family: sans-serif;
+    color: #24609B;
+    padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+}
+
+.weather-box .left .time-location-container {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather-box .left .time-location-container .location {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    height: 100%;
+}
+
+.weather-box .left .time-location-container .location .location-title{
+    margin-left: 0.3rem;
+}
+
+.weather-box .left .temperature-container {
+    height: 60%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-box .left .temperature-container .temperature{
+    font-size: 5rem;
+}
+
+.weather-box .left .temperature-container .temperature-description {
+    
+}
+
+.weather-box .left .other-stats-container {
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin-top: 1em;
+}
+
+.weather-box .right {
+    width: 50%;
+    height: 100%;
+    background-color: #D5EBFF;
+    border-radius: 10px;
+}
+
+.weather-box .right .weather-chart-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+}
+
+.weather-box .right .weather-chart-container .temperature-heading {
+    height: 20%;
+    font-size: 1.1rem;
+    color: #24609B;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.weather-box .right .weather-chart-container .weather-chart-graph {
+    height: 80%;
+}
+
+.weather-box .right .weather-chart-container .temperature-footer {
+    /* height: 15%; */
+    color: #24609B;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    transform: translateY(-160%);
+}
+
+.weather-stats-container {
+    height: 47%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .dashboard-main-panel {
+        width: 100%;
+    }
+}

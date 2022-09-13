@@ -1,0 +1,29 @@
+.future-forecast-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.future-forecast-item .day-date {
+    width: 35%;
+}
+
+.future-forecast-item .day-date .day {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.future-forecast-item .day-date .date {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.future-forecast-item .temperature {
+    font-size: 1rem;
+    font-weight: 600;
+    width: 10%;
+}
+
+.future-forecast-item .weather-icon img {
+    height: 3rem;
+}

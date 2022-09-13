@@ -1,0 +1,30 @@
+.dashboard-left-panel {
+    height: 100%;
+    width: 16%;
+    border-right: 4px solid #F0F3F5;
+}
+
+.lp-logo {
+    height: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lp-menu {
+    height: 74%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+.lp-logout {
+    height: 10%;
+}
+
+/* @media only screen and (max-width: 600px) {
+    .dashboard-left-panel {
+        display:none;
+        border: none;
+    }
+} */

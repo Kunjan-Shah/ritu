@@ -1,0 +1,8 @@
+.menu-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-logo span{
+    font-size: 1.6rem;
+}

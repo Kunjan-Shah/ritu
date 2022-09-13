@@ -1,0 +1,23 @@
+.rain-chance {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #24609B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image:
+        linear-gradient(var(--x), transparent 50%, var(--fill-color) 50%),
+        linear-gradient(90deg, #C4E2FF 50%, transparent 50%);
+}
+
+.rain-chance .label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #ECF3F8;
+    height: 80px;
+    width: 80px;
+}

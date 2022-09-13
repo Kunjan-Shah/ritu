@@ -1,0 +1,22 @@
+.hourly-forecast-card {
+    min-width: 60px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #C4E2FF;
+    border-radius: 10px;
+}
+
+.hourly-forecast-card .header {
+    font-size: 0.7rem;
+}
+
+.hourly-forecast-card .weather-icon img {
+    height: 2.5rem;
+}
+
+.hourly-forecast-card .temperature {
+    font-size: 0.8rem;
+    font-weight: 600;
+}

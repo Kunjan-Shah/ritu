@@ -1,0 +1,19 @@
+.weather-chart {
+    height: 100%;
+}
+
+.recharts-wrapper {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.recharts-surface {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.recharts-cartesian-axis-tick-value tspan{
+    fill: #24609B;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}

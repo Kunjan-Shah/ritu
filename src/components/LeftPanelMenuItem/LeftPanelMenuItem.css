@@ -1,0 +1,85 @@
+.lp-menu-item {
+    display: flex;
+    align-items: center;
+    /* color: #1F1E31; */
+    color: #62626F;
+    animation-fill-mode: forwards;
+    /* z-index: -1; */
+}
+
+.menu-items-visible {
+    animation-name: items-visible;
+}
+.menu-items-invisible {
+    animation-name: items-invisible;
+}
+
+.lp-menu-item .icon {
+    font-size: 1.1rem;
+    color: #A6B6BF;
+}
+
+.lp-menu-item .dark-icon {
+    /* color: #A6B6BF; */
+    color: #1F1E31;
+}
+
+.lp-menu-item .item-title {
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    margin-left: 0.5em;
+}
+
+.lp-menu-item .dark-title {
+    color: #1F1E31;
+}
+
+.lp-menu-item .empty {
+    width: 15%;
+}
+
+.item-active {
+    border-right: 4px solid #1F1E31;
+}
+
+.anim-item-1 {
+    animation-duration: 0.1s;
+}
+
+.anim-item-2 {
+    animation-duration: 0.15s;
+}
+
+.anim-item-3 {
+    animation-duration: 0.2s;
+}
+
+.anim-item-4 {
+    animation-duration: 0.25s;
+}
+
+.anim-item-5 {
+    animation-duration: 0.3s;
+}
+
+.anim-item-6 {
+    animation-duration: 0.3s;
+}
+
+@keyframes items-visible {
+    0% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes items-invisible {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
